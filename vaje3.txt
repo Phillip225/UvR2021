@@ -1,0 +1,122 @@
+systemd-+-DiscoverNotifie---6*[{DiscoverNotifie}]
+        |-ModemManager---2*[{ModemManager}]
+        |-NetworkManager---2*[{NetworkManager}]
+        |-accounts-daemon---2*[{accounts-daemon}]
+        |-acpid
+        |-agent---2*[{agent}]
+        |-akonadi_control-+-akonadi_akonote---3*[{akonadi_akonote}]
+        |                 |-akonadi_birthda---3*[{akonadi_birthda}]
+        |                 |-akonadi_contact---3*[{akonadi_contact}]
+        |                 |-akonadi_google_---23*[{akonadi_google_}]
+        |                 |-akonadi_ical_re---3*[{akonadi_ical_re}]
+        |                 |-akonadi_imap_re---9*[{akonadi_imap_re}]
+        |                 |-akonadi_indexin---3*[{akonadi_indexin}]
+        |                 |-akonadi_maildir---3*[{akonadi_maildir}]
+        |                 |-akonadi_maildis---4*[{akonadi_maildis}]
+        |                 |-akonadi_migrati---3*[{akonadi_migrati}]
+        |                 |-akonadi_newmail---3*[{akonadi_newmail}]
+        |                 |-akonadiserver-+-mysqld-akonadi---13*[{mysqld-akonadi}]
+        |                 |               `-20*[{akonadiserver}]
+        |                 `-4*[{akonadi_control}]
+        |-at-spi-bus-laun-+-dbus-daemon
+        |                 `-3*[{at-spi-bus-laun}]
+        |-at-spi2-registr---2*[{at-spi2-registr}]
+        |-avahi-daemon---avahi-daemon
+        |-bluetoothd
+        |-boltd---2*[{boltd}]
+        |-bwrap---xdg-dbus-proxy---{xdg-dbus-proxy}
+        |-cron
+        |-cups-browsed---2*[{cups-browsed}]
+        |-cupsd
+        |-dbus-daemon
+        |-fwupd---4*[{fwupd}]
+        |-gmenudbusmenupr---2*[{gmenudbusmenupr}]
+        |-haveged
+        |-irqbalance---{irqbalance}
+        |-kaccess---2*[{kaccess}]
+        |-kdeconnectd---4*[{kdeconnectd}]
+        |-kded5-+-konsole-+-bash
+        |       |         `-3*[{konsole}]
+        |       |-konsole-+-bash-+-pstree
+        |       |         |      `-3*[vim]
+        |       |         `-3*[{konsole}]
+        |       `-7*[{kded5}]
+        |-kdeinit5---klauncher---2*[{klauncher}]
+        |-2*[kerneloops]
+        |-kio_http_cache_---{kio_http_cache_}
+        |-kioslave5
+        |-ksmserver---2*[{ksmserver}]
+        |-kwalletd5---2*[{kwalletd5}]
+        |-kwin_x11---20*[{kwin_x11}]
+        |-networkd-dispat
+        |-org_kde_powerde---6*[{org_kde_powerde}]
+        |-packagekitd---2*[{packagekitd}]
+        |-plasmashell-+-bwrap---bwrap-+-bwrap---Discord
+        |             |               `-discord-+-Discord-+-Discord---Discord---15*[{Discord}]
+        |             |                         |         |-2*[Discord---4*[{Discord}]]
+        |             |                         |         |-Discord---30*[{Discord}]
+        |             |                         |         |-2*[cat]
+        |             |                         |         |-zypak-sandbox
+        |             |                         |         `-32*[{Discord}]
+        |             |                         `-socat
+        |             |-plasma-discover---13*[{plasma-discover}]
+        |             `-45*[{plasmashell}]
+        |-polkit-kde-auth---5*[{polkit-kde-auth}]
+        |-polkitd---2*[{polkitd}]
+        |-rsyslogd---3*[{rsyslogd}]
+        |-rtkit-daemon---2*[{rtkit-daemon}]
+        |-sddm-+-Xorg---4*[{Xorg}]
+        |      |-sddm-helper---startplasma-x11-+-ssh-agent
+        |      |                               `-{startplasma-x11}
+        |      `-{sddm}
+        |-smartd
+        |-snapd---9*[{snapd}]
+        |-start_kdeinit
+        |-systemd-+-(sd-pam)
+        |         |-GeckoMain-+-6*[Isolated Web Co---19*[{Isolated Web Co}]]
+        |         |           |-Isolated Web Co---20*[{Isolated Web Co}]
+        |         |           |-Isolated Web Co---22*[{Isolated Web Co}]
+        |         |           |-Privileged Cont---19*[{Privileged Cont}]
+        |         |           |-Socket Process---3*[{Socket Process}]
+        |         |           |-3*[Web Content---14*[{Web Content}]]
+        |         |           |-WebExtensions---20*[{WebExtensions}]
+        |         |           |-plasma-browser----2*[{plasma-browser-}]
+        |         |           `-115*[{GeckoMain}]
+        |         |-bwrap---xdg-dbus-proxy---{xdg-dbus-proxy}
+        |         |-dbus-daemon
+        |         |-dconf-service---2*[{dconf-service}]
+        |         |-dolphin-+-bash
+        |         |         |-gwenview---5*[{gwenview}]
+        |         |         `-7*[{dolphin}]
+        |         |-flatpak-portal-+-bwrap
+        |         |                `-2*[{flatpak-portal}]
+        |         |-flatpak-session---2*[{flatpak-session}]
+        |         |-kactivitymanage---5*[{kactivitymanage}]
+        |         |-kglobalaccel5---2*[{kglobalaccel5}]
+        |         |-3*[kioslave5]
+        |         |-kioslave5---2*[{kioslave5}]
+        |         |-krunner---16*[{krunner}]
+        |         |-kscreen_backend---2*[{kscreen_backend}]
+        |         |-obexd
+        |         |-p11-kit-server---p11-kit-remote
+        |         |-pipewire---{pipewire}
+        |         |-pipewire-media----{pipewire-media-}
+        |         |-pulseaudio-+-gsettings-helpe---3*[{gsettings-helpe}]
+        |         |            `-7*[{pulseaudio}]
+        |         |-xdg-document-po-+-fusermount
+        |         |                 `-5*[{xdg-document-po}]
+        |         `-xdg-permission----2*[{xdg-permission-}]
+        |-systemd-journal
+        |-systemd-logind
+        |-systemd-resolve
+        |-systemd-timesyn---{systemd-timesyn}
+        |-systemd-udevd
+        |-touchegg---3*[{touchegg}]
+        |-touchegg---4*[{touchegg}]
+        |-udisksd---4*[{udisksd}]
+        |-unattended-upgr---{unattended-upgr}
+        |-upowerd---2*[{upowerd}]
+        |-whoopsie---2*[{whoopsie}]
+        |-wpa_supplicant
+        |-xembedsniproxy---2*[{xembedsniproxy}]
+        `-xsettingsd
